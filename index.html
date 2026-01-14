@@ -1,20 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remote Mobile Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<div id="overlay" style="position:fixed;inset:0;background:#0008"></div>
-<div id="contactBox" style="position:fixed;top:40%;left:40%;background:white;padding:20px">
-  <button onclick="closePopup()">CLOSE</button>
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+<!-- Contact Popup -->
+<div class="contact-box" id="contactBox">
+  <span class="close" onclick="closePopup()">✖</span>
+
+  <h2>OFFICIAL CONTACT BOX ⚡⚡</h2>
+
+  <div class="contact-row">
+    <span>Telegram:</span>
+    <a href="https://t.me/TeamUnlockerGSM" target="_blank">Contact</a>
+  </div>
+
+  <div class="contact-row">
+    <span>Website:</span>
+    <span class="green">TeamUnlockerGSM.com</span>
+  </div>
+
+  <a class="telegram-btn" href="https://t.me/Teamunlockergsmupdates" target="_blank">
+    Join Telegram Channel
+  </a>
+
+  <p class="small">
+    FRP | EDL AUTH | ROOT | UNLOCK | DEAD BOOT & MORE
+  </p>
 </div>
 
-<script>
-alert("INLINE SCRIPT LOADED");
-function closePopup() {
-  alert("CLOSE CLICKED");
-  document.getElementById("overlay").style.display = "none";
-  document.getElementById("contactBox").style.display = "none";
-}
-</script>
+<!-- SERVICES -->
+<section class="services">
+  <h1>WHAT SERVICES I OFFER ?</h1>
+  <p class="subtitle">Fast | Professional & Legal Services</p>
 
+  <div class="cards">
+    <div class="card"><h3>Authorized Flashing</h3><span class="on">ON</span><p class="red">Official & Safe By Server</p></div>
+    <div class="card"><h3>Root Services</h3><span class="on">ON</span><p class="red">Magisk / Kernel / Sukisu</p></div>
+    <div class="card"><h3>Instant Bootloader Unlock</h3><span class="on">ON</span><p class="red">No 7 Day Wait | No Permission</p></div>
+    <div class="card"><h3>FRP Removal</h3><span class="on">ON</span><p class="red">Xiaomi | OnePlus | Realme</p></div>
+    <div class="card"><h3>EDL Unbrick</h3><span class="on">ON</span><p class="red">Dead Boot Fix</p></div>
+    <div class="card"><h3>Firmware Downgrade</h3><span class="on">ON</span><p class="red">Safe Rollback</p></div>
+  </div>
+</section>
+
+<div class="about">
+  <h3>About Remote Server</h3>
+  <p>
+    Independent technical service platform providing authorized flashing,
+    FRP removal, firmware installation and mobile software solutions.
+  </p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
