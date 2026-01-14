@@ -8,17 +8,11 @@
 </head>
 <body>
 
-<!-- Overlay -->
 <div class="overlay" id="overlay"></div>
 
 <div class="contact-box" id="contactBox">
   <span class="close" id="closePopup">✖</span>
 
-
-<!-- CONTACT POPUP -->
-<div class="contact-box">
-  <span class="close" id="closePopup">✖</span>
-  <span class="close">✖</span>
   <h2>OFFICIAL CONTACT BOX ⚡⚡</h2>
 
   <div class="contact-row">
@@ -39,6 +33,7 @@
     FRP | EDL AUTH | ROOT | UNLOCK | DEAD BOOT & MORE
   </p>
 </div>
+
 
 <!-- SERVICES -->
 <section class="services">
@@ -93,34 +88,17 @@
     mobile software solutions.
   </p>
 </div>
--<script>
-  const closeBtn = document.getElementById("closePopup");
-  const overlay = document.getElementById("overlay");
-  const contactBox = document.getElementById("contactBox");
-
-  closeBtn.addEventListener("click", () => {
-    overlay.style.display = "none";
-    contactBox.style.display = "none";
-  });
-</script
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.getElementById("closePopup");
   const overlay = document.getElementById("overlay");
   const contactBox = document.getElementById("contactBox");
 
-  if (!closeBtn || !overlay || !contactBox) {
-    console.error("Popup elements not found");
-    return;
-  }
-
-  closeBtn.onclick = function () {
-    overlay.classList.add("hide");
-    contactBox.classList.add("hide");
-  };
+  closeBtn.addEventListener("click", function () {
+    overlay.style.display = "none";
+    contactBox.style.display = "none";
+  });
 });
 </script>
-
-
 </body>
 </html>
