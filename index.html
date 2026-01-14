@@ -8,10 +8,10 @@
 </head>
 <body>
 
-<div class="overlay" id="overlay"></div>
+<div class="overlay" id="overlay" onclick="closePopup()"></div>
 
 <div class="contact-box" id="contactBox">
-  <span class="close" id="closePopup">✖</span>
+  <span class="close" onclick="closePopup()">✖</span>
 
   <h2>OFFICIAL CONTACT BOX ⚡⚡</h2>
 
@@ -33,6 +33,7 @@
     FRP | EDL AUTH | ROOT | UNLOCK | DEAD BOOT & MORE
   </p>
 </div>
+
 
 
 <!-- SERVICES -->
@@ -89,16 +90,10 @@
   </p>
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const closeBtn = document.getElementById("closePopup");
-  const overlay = document.getElementById("overlay");
-  const contactBox = document.getElementById("contactBox");
-
-  closeBtn.addEventListener("click", function () {
-    overlay.style.display = "none";
-    contactBox.style.display = "none";
-  });
-});
+function closePopup() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("contactBox").style.display = "none";
+}
 </script>
 </body>
 </html>
