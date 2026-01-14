@@ -17,20 +17,27 @@ body {
   z-index: 10;
 }
 
-
-/* CONTACT BOX */
+/* Popup */
 .contact-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10,20,40,0.95);
+  padding: 20px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
   z-index: 20;
 }
 
 .close {
-  font-size: 18px;
-  font-weight: bold;
   position: absolute;
   top: 10px;
   right: 15px;
   cursor: pointer;
   color: red;
+  font-size: 18px;
 }
 
 .contact-row {
@@ -39,9 +46,7 @@ body {
   margin: 10px 0;
 }
 
-.green {
-  color: #00ff9c;
-}
+.green { color: #00ff9c; }
 
 .telegram-btn {
   display: block;
@@ -54,16 +59,7 @@ body {
   text-decoration: none;
 }
 
-.small {
-  font-size: 12px;
-  opacity: 0.7;
-}
-
-/* SERVICES */
-.services {
-  margin-top: 500px;
-  text-align: center;
-}
+.services { margin-top: 500px; text-align: center; }
 
 .cards {
   display: grid;
@@ -76,33 +72,15 @@ body {
   background: rgba(20,30,60,0.7);
   border-radius: 15px;
   padding: 20px;
-  position: relative;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
-.card:hover {
-  box-shadow: 0 0 25px rgba(0,255,255,0.4);
-}
+.on { background: green; padding: 3px 10px; border-radius: 20px; }
+.red { color: #ff4d4d; }
 
-.on {
-  background: green;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-}
-
-.red {
-  color: #ff4d4d;
-}
-
-/* ABOUT */
 .about {
   background: #fff4b8;
   color: #000;
   margin: 30px;
   padding: 20px;
   border-radius: 12px;
-}
-.hide {
-  display: none !important;
 }
