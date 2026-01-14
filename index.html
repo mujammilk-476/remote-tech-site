@@ -9,10 +9,13 @@
 <body>
 
 <!-- Overlay -->
-<div class="overlay"></div>
+<<div class="overlay" id="overlay"></div>
+<div class="contact-box" id="contactBox">
+
 
 <!-- CONTACT POPUP -->
 <div class="contact-box">
+  <span class="close" id="closePopup">✖</span>
   <span class="close">✖</span>
   <h2>OFFICIAL CONTACT BOX ⚡⚡</h2>
 
@@ -88,6 +91,16 @@
     mobile software solutions.
   </p>
 </div>
+<script>
+  const closeBtn = document.getElementById("closePopup");
+  const overlay = document.getElementById("overlay");
+  const contactBox = document.getElementById("contactBox");
+
+  closeBtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+    contactBox.style.display = "none";
+  });
+</script>
 
 </body>
 </html>
